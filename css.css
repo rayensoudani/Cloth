@@ -1,0 +1,92 @@
+
+  body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.title {
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.title:hover {
+    transform: scale(1.2);
+    color: #feb47b;
+}
+
+
+.pattern-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-radial-gradient(circle, rgba(255, 255, 255, 0.355),   rgba(0, 0, 0, 0.452) 20px, transparent 20px, transparent 40px);
+    animation: patternMove 2s linear infinite;
+    z-index: 0;
+}
+
+@keyframes patternMove {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 40px 40px;
+    }
+}
+
+#image-gallery {
+    padding: 50px;
+    text-align: center;
+    color: white;
+    z-index: 10;
+    position: relative;
+}
+
+#image-gallery h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-gallery img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}

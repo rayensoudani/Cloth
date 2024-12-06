@@ -1,0 +1,277 @@
+/* General body and page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+img{
+    width: 200px;
+    height: 100px;
+}
+
+
+header {
+    background-color: #333;body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f8f8;
+        margin: 0;
+        padding: 0;
+        color: #333;
+        transition: background-color 0.3s ease;
+    }
+    
+    img {
+        width: 200px;
+        height: 100px;
+    }
+    
+    header {
+        background-color: #333;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+        transition: background-color 0.3s ease;
+    }
+    
+    header .brand h1 {
+        margin: 0;
+        font-size: 2.5rem;
+        transition: font-size 0.3s ease;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    nav ul li {
+        display: inline;
+        margin: 0 15px;
+    }
+    
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.1rem;
+        transition: color 0.3s ease;
+    }
+    
+    nav ul li a:hover {
+        color: #feb47b;
+    }
+    
+    .purchase {
+        padding: 40px;
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+    
+    .purchase h2 {
+        font-size: 2rem;
+        color: #333;
+        transition: font-size 0.3s ease;
+    }
+    
+    .purchase p {
+        font-size: 1.2rem;
+        color: #666;
+    }
+    
+    .purchase img {
+        max-width: 100%;
+        height: auto;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin: 20px 0;
+        transition: transform 0.3s ease;
+    }
+    
+    .purchase img:hover {
+        transform: scale(1.05);
+    }
+    
+    .purchase form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .purchase label {
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 5px;
+        transition: color 0.3s ease;
+    }
+    
+    .purchase input, .purchase textarea {
+        padding: 10px;
+        width: 100%;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        transition: border-color 0.3s ease, background-color 0.3s ease;
+    }
+    
+    .purchase input:focus, .purchase textarea:focus {
+        border-color: #feb47b;
+        background-color: #fff6e5;
+    }
+    
+    .purchase textarea {
+        height: 100px;
+    }
+    
+    .purchase button {
+        padding: 15px 30px;
+        background-color: #feb47b;
+        border: none;
+        border-radius: 5px;
+        color: black;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    
+    .purchase button:hover {
+        background-color: #ff7e5f;
+        transform: scale(1.05);
+    }
+    
+    .purchase button:active {
+        transform: scale(0.98);
+    }
+    
+    .purchase form input[type="submit"] {
+        background-color: #feb47b;
+        border-radius: 5px;
+    }
+    
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    transition: background-color 0.3s ease; /* Header background transition */
+}
+
+header .brand h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    transition: font-size 0.3s ease; /* Brand title size transition */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease; /* Navigation link color transition */
+}
+
+nav ul li a:hover {
+    color: #feb47b; /* Hover effect for links */
+}
+
+.purchase {
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth shadow and transform effects */
+}
+
+.purchase h2 {
+    font-size: 2rem;
+    color: #333;
+    transition: font-size 0.3s ease; /* Title size transition */
+}
+
+.purchase p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.purchase img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px 0;
+    transition: transform 0.3s ease; /* Image scale effect */
+}
+
+.purchase img:hover {
+    transform: scale(1.05); /* Slight zoom effect on image hover */
+}
+
+.purchase form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.purchase label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    transition: color 0.3s ease; /* Transition on label color */
+}
+
+.purchase input, .purchase textarea {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease, background-color 0.3s ease; /* Input focus transition */
+}
+
+.purchase input:focus, .purchase textarea:focus {
+    border-color: #feb47b; /* Focus effect */
+    background-color: #fff6e5; /* Light background on focus */
+}
+
+.purchase textarea {
+    height: 100px;
+}
+
+.purchase button {
+    padding: 15px 30px;
+    background-color: #feb47b;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Button color and scale transition */
+}
+
+.purchase button:hover {
+    background-color: #ff7e5f; /* Button hover color */
+    transform: scale(1.05); /* Slight scale-up on hover */
+}
+
+.purchase button:active {
+    transform: scale(0.98); /* Slight scale-down when clicked */
+}
+
+.purchase form input[type="submit"] {
+    background-color: #feb47b;
+    border-radius: 5px;
+}
